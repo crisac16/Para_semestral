@@ -6,6 +6,8 @@ $password = "";
 //
 $BasName=$_GET['BaseName'];
 
+header("refresh:5;url=https:Menu.html");
+ 
 $conn = mysqli_connect($servidor, $nombreusuario, $password);
 if (!$conn) {
     die("Conexión fallida: ". mysqli_connect_error());
